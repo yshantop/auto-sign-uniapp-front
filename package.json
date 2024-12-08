@@ -1,0 +1,27 @@
+{
+  "name": "auto-sign-uniapp-front",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^2.0.1",
+    "@dcloudio/uni-h5": "^2.0.1",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "^2.0.1",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.1",
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "cross-env": "^7.0.3",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  }
+}
