@@ -3,26 +3,31 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run serve",
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
-    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
-    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve"
+    "build:h5": "vue-cli-service uni-build",
+    "dev:h5": "vue-cli-service uni-serve"
   },
   "dependencies": {
-    "@dcloudio/uni-app": "^2.0.2",
-    "@dcloudio/uni-h5": "^2.0.2",
-    "core-js": "^3.30.1",
-    "vue": "^2.6.14",
-    "vuex": "^3.6.2"
+    "@dcloudio/uni-app": "^2.0.0",
+    "@dcloudio/uni-h5": "^2.0.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
-    "@dcloudio/uni-cli-shared": "^2.0.2",
-    "@dcloudio/vue-cli-plugin-uni": "^2.0.2",
-    "@vue/cli-plugin-babel": "~4.5.19",
-    "@vue/cli-service": "~4.5.19",
-    "cross-env": "^7.0.3",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
-  }
+    "@dcloudio/uni-cli-shared": "^2.0.0",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0",
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "babel-plugin-import": "^1.13.3",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  },
+  "browserslist": [
+    "last 1 versions",
+    "not dead",
+    "iOS >= 10",
+    "android >= 4.4"
+  ]
 }
